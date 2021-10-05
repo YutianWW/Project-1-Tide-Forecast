@@ -1,0 +1,408 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.wavejs{
+    top:0;
+}
+
+
+#tittle-h{
+    position: absolute;
+    display:inline;
+    width: 920px;
+    left: 178px;
+    top: 349px;
+    
+    font-style: normal;
+    font-weight:lighter;
+    text-align: left;
+    font-size: 144px;
+    line-height: 169px;
+  
+    color: #000000;
+    
+}
+
+
+#tittle-p{
+    position:absolute;
+    display: inline-block;
+    width: 1000px;
+    left: 178px;
+    top: 670px;
+}
+
+
+
+
+
+
+ 
+h1{
+    font-family: 'Righteous', cursive;
+}
+
+
+
+.content{
+    display: flex; 
+    justify-content: flex-end;
+    width: 711px;
+    height: 400px;
+}
+
+#SurfHeightImg{
+    margin:0;
+    width: 100%;
+
+}
+#windvideo{
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#canvas-homepage{
+    display: flex;
+}
+
+
+.logo{
+    width:400px;
+    height:400px;
+}
+
+#logoframe{
+   border: none;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+
+
+.page-data{
+    display: flex;
+    flex-direction:row;
+    position: absolute;
+    align-items:center;
+    top: 1528px;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+    height: 600px;
+}
+
+.container-buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 312.5px;
+}
+
+
+/* #canvas-container{
+    display: block;
+	position: absolute;
+	left: 0;
+  top: 0;
+  z-index: -1;
+} */
+
+/* buttons */
+
+.nav-button{
+    background-color:white;
+    color:#516A83;
+    border: 0 solid;
+    border-radius: 0.8em;
+    width:12em;
+    height:3em;
+    font-size: 16px;
+    font-family: sans-serif;
+    overflow: hidden;
+    font-weight: bold;
+    position: relative;
+    transition: 0.5s;
+    margin:1em;
+    padding:0;
+}
+
+
+
+
+.nav-button:hover {
+    color: black;
+    background-color: #96AfBD;
+}
+
+/* end of buttons */
+
+
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+*[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+
+/* ---------- GENERAL ---------- */
+
+
+
+.tide{
+    position: absolute;
+	color: #0e171c;
+    display: flex;
+	font: 300 100%/1.5em 'Lato', sans-serif;
+	margin: 5px;
+    min-height: 100vh;
+    place-items: center;
+    top: 759px;
+    text-align: center;
+    justify-content:flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 2em;
+	line-height: 1.25em;
+	margin: .25em 0;
+}
+
+h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: .33em 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	width: 510px;
+    display: inline-block;
+}
+
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+	text-align: center;
+}
+
+.calendar header {
+	position: relative;
+}
+
+.calendar h2 {
+	text-transform: uppercase;
+}
+
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid #516482;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+
+.current-day {
+	background: #96AfBD;
+	color: #f9f9f9;
+}
+
+.highlevel {
+	cursor: pointer;
+	position: relative;
+}
+
+.highlevel:after {
+	background: #E6AAA3;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+.lowlevel {
+	cursor: pointer;
+	position: relative;
+}
+
+.lowlevel:after {
+	background: #A6BECF;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+
+.highlevel.current-day:after {
+	background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
+}
+
+
+/* end of calender */
+
+/* #explain{
+    margin: 20px;
+} */
+
+#canvas-logo{
+	display: block;
+	position: absolute;
+	left: 80px;
+    top: 1500px;
+    z-index: 999;
+}
+
+
+#explain {
+	cursor: pointer;
+	position: relative;
+    margin: 20px;
+}
+
+#low:after {
+	background: #A6BECF;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: -0.5em;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+#high:after {
+	background: #E6AAA3;
+	border-radius: 50%;
+	top: 0.8em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: -0.5em;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+
+
+
+
+
+.tdtidelevel{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background-image: linear-gradient(#ffffff, #7a97a8);
+    width: 50%;
+    height: 100%;
+}
+
+.tdicon{
+    width: 20%;
+    max-width: 80px;
+    padding: 10px;
+}
+
+.level{
+    width:3%;
+}
+
+
+
+
+.tdtidelevel h3{
+ position: relative;
+ color:#3e5469;
+ top: -90px;
+ left: 150px;
+ height: 20px;
+}
+
+
+
+
+
